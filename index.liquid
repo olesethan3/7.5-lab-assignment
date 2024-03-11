@@ -1,15 +1,15 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: 7.5 Lab Assignment
 ---
 <div class="font-sans">
         <div class="flex justify-center items-center" x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/7', jsonItem='thumbnail')}">
-            <img class="border-8 border-inherit rounded-xl" alt ="thumbnail" x-bind:src="thumbImage"/>
+            <img class="mt-10 border-8 border-inherit rounded-xl" alt ="thumbnail" x-bind:src="thumbImage">
         </div>
         <div class="font-bold text-3xl" x-data="{title: $fetchjson('https://dummyjson.com/products/7', jsonItem='title')}">
-            <h1 x-text="title"></h1>
+            <h1 class="mt-5" x-text="title">Item</h1>
         </div>
         <div class="semi-bold" x-data="{description: $fetchjson('https://dummyjson.com/products/7', jsonItem='description')}">
-            <h1 x-text="description"></h1>
+            <h1 class="mt-5" x-text="description">Description</h1>
         </div>
     </div>
