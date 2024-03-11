@@ -2,6 +2,14 @@
 layout: layout.liquid
 title: 11ty Boilerplate
 ---
-
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<div class="font-sans">
+        <div class="flex justify-center items-center" x-data="{thumbImage: $fetchjson('https://dummyjson.com/products/7', jsonItem='thumbnail')}">
+            <img class="border-8 border-inherit rounded-xl" alt ="thumbnail" x-bind:src="thumbImage"/>
+        </div>
+        <div class="font-bold text-3xl" x-data="{title: $fetchjson('https://dummyjson.com/products/7', jsonItem='title')}">
+            <h1 x-text="title"></h1>
+        </div>
+        <div class="semi-bold" x-data="{description: $fetchjson('https://dummyjson.com/products/7', jsonItem='description')}">
+            <h1 x-text="description"></h1>
+        </div>
+    </div>
